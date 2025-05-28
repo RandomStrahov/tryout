@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bi42xrxx4aikk"]
+
+[ext_resource type="Script" path="res://node_3d.gd" id="1_a202f"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4xowi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a202f"]
+
+[sub_resource type="Environment" id="Environment_4xowi"]
+background_mode = 1
+background_color = Color(1, 0.378906, 0.844727, 1)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(0.999822, 0, -0.0188659, 0, 1, 0, 0.0188659, 0, 0.999822, 0, 0, 0)
+script = ExtResource("1_a202f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -9.31323e-10, 0, 0, 0.712332, -0.701842, 0, 0.701842, 0.712332, 0.745238, 0.755325, 0.0112105)
+mesh = SubResource("BoxMesh_4xowi")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 191.0
+offset_bottom = 174.0
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, -2.49815, 0)
+mesh = SubResource("BoxMesh_a202f")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.63349, -0.351084, 0.689515, 0.289991, 0.933908, 0.209095, -0.717354, 0.0674929, 0.693432, 2.66061, 1.31339, 2.79168)
+fov = 56.25
+size = 1.45197
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4xowi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.357537, 0.933899, 0, -0.933899, 0.357537, 0, 9.91638, 14.235)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.938264, 0.108966, 0.32831, 0.345921, -0.295556, -0.890497, 0, 0.949091, -0.315003, 2.98471, 0, 0)
