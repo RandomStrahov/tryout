@@ -1,13 +1,3 @@
-
-[gd_scene load_steps=5 format=3 uid="uid://bi42xrxx4aikk"]
-
-[ext_resource type="Script" path="res://node_3d.gd" id="1_a202f"]
-
-[gd_scene load_steps=2 format=3 uid="uid://ga0xukw11mci"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_4xowi"]
+[gd_scene format=3 uid="uid://dib8a7lyhoclv"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_4xowi")
