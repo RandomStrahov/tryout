@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-[gd_scene load_steps=5 format=3 uid="uid://bme0w058lroop"]
 
-[ext_resource type="Script" uid="uid://c24qngmf2c6uc" path="res://node_3d.gd" id="1_a202f"]
-=======
 [gd_scene load_steps=5 format=3 uid="uid://bi42xrxx4aikk"]
 
 [ext_resource type="Script" path="res://node_3d.gd" id="1_a202f"]
->>>>>>> frantova_branch
-=======
+
 [gd_scene load_steps=2 format=3 uid="uid://ga0xukw11mci"]
->>>>>>> 055781f5fef3169784a178ee116f9737bfcdce10
 
 [sub_resource type="BoxMesh" id="BoxMesh_4xowi"]
 
