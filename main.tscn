@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dq7ds3qq4ex3a"]
+
+[ext_resource type="Script" uid="uid://cx00lrjj117jo" path="res://bean.gd" id="1_ig7tw"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7dm0k"]
+size = Vector2(50, 50)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ig7tw"]
+
+[sub_resource type="Environment" id="Environment_7dm0k"]
+background_mode = 1
+background_color = Color(0.635294, 0, 0, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.861448, 0.863098, 0, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_7dm0k")
+
+[node name="Bean" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02254, 0)
+mesh = SubResource("CapsuleMesh_ig7tw")
+script = ExtResource("1_ig7tw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.980761, 0.19521, 0, -0.19521, 0.980761, 1.97734, 2.89067, 3.19386)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7dm0k")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.359392, -0.65602, 0.663684, -0.312381, 0.754744, 0.576871, -0.87935, 0, -0.476177, 8.09756, 11.9172, -4.99968)
