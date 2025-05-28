@@ -11,10 +11,11 @@ background_mode = 1
 background_color = Color(1, 0.378906, 0.844727, 1)
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(0.999822, 0, -0.0188659, 0, 1, 0, 0.0188659, 0, 0.999822, 0, 0, 0)
 script = ExtResource("1_a202f")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.712332, -0.701842, 0, 0.701842, 0.712332, 0.762349, 0.755325, 0.918076)
+transform = Transform3D(1, -9.31323e-10, 0, 0, 0.712332, -0.701842, 0, 0.701842, 0.712332, 0.745238, 0.755325, 0.0112105)
 mesh = SubResource("BoxMesh_4xowi")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
