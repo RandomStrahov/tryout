@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="try_out"
+run/main_scene="uid://bme0w058lroop"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=3
