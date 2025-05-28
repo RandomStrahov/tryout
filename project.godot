@@ -11,13 +11,10 @@ config_version=5
 [application]
 
 config/name="try_out"
+run/main_scene="uid://bq2xcnufv51pc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="uid://bme0w058lroop"
-
-[display]
-
-window/size/mode=4
 
 [display]
 
