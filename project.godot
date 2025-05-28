@@ -11,20 +11,15 @@ config_version=5
 [application]
 
 config/name="try_out"
-<<<<<<< HEAD
 run/main_scene="uid://bme0w058lroop"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
-
-[rendering]
-
-anti_aliasing/quality/msaa_3d=3
-=======
-run/main_scene="uid://dq7ds3qq4ex3a"
-config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://bme0w058lroop"
 
 [display]
 
 window/size/mode=4
->>>>>>> frantova_branch
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=3
