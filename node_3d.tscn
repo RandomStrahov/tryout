@@ -9,3 +9,4 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2)
 mesh = SubResource("BoxMesh_4xowi")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.54835, 0.951645, 1.89237)
+mesh = SubResource("SphereMesh_4xowi")
